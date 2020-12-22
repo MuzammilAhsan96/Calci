@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="cal.js"></script>
+</head>
+<body>
+	<table>
+		<!--  This is header section ofcalculator-->
+		<tr>
+			<tr>
+				<td class="heading">Calculator</td>
+			</tr>
+			<td>
+				<input type="text" id="input" placeholder="Enter Expression" readonly="readonly"><br>
+				<input type="text" id="answer" readonly="readonly">
+			</td>
+		</tr>
+		<!--Button action for calculator----->
+		<tr>
+			<td>
+				<input type="Button" value="CE" onclick="clearScreen()" style="color: #FFF; background-color: #C00; width: 125px;">
+				<input type="Button" value="=" onclick="compute()" style="color: #000; background-color: #0C0; width: 125px;">
+				<br>
+				<input type="Button" value="1" onclick="getNumber(1)">
+				<input type="Button" value="2" onclick="getNumber(2)">
+				<input type="Button" value="3" onclick="getNumber(3)">
+				<input type="Button" value="&#8592" onclick="backSpace()">
+				<br>
+				<input type="Button" value="4" onclick="getNumber(4)">
+				<input type="Button" value="5" onclick="getNumber(5)">
+				<input type="Button" value="6" onclick="getNumber(6)">
+				<input type="Button" value="+" onclick="operate('+')">
+				<br>
+				<input type="Button" value="7" onclick="getNumber(7)">
+				<input type="Button" value="8" onclick="getNumber(8)">
+				<input type="Button" value="9" onclick="getNumber(9)">
+				<input type="Button" value="-" onclick="operate('-')">
+				<br>
+				<input type="Button" value="0" onclick="getNumber(0)">
+				<input type="Button" value="/" onclick="operate('/')">
+				<input type="Button" value="*" onclick="operate('*')">
+				<input type="Button" value="()" onclick="brackets()">
+				<br>
+
+			</td>
+		</tr>
+	</table>
+
+
+
+
+</body>
+</html>
